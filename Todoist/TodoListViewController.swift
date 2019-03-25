@@ -13,6 +13,7 @@ class TodoListViewController: UITableViewController {
     //----------------------------------------------------------------------------------------
     //MARK: - Variable Declarations & IBOutlets/IBActions
     
+    let defaults = UserDefaults.standard
     
     var itemArray = ["Find Mike", "Buy Eggos", "Destroy Demogorgon"]
     
@@ -28,6 +29,11 @@ class TodoListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // This originally but then I had to make sure there werent any errors: ---> itemArray = defaults.array(forKey: "TodoListArray") as! [String]
+        if let items = defaults.array(forKey: "TodoListArray") as? [String] {
+            itemArray = items
+        }
     }
 
 
@@ -73,6 +79,9 @@ class TodoListViewController: UITableViewController {
             (alertAction) in
 
             self.itemArray.append(textField.text!)
+            
+            self.defaults.set(self.itemArray, forKey: "TodoListArray")
+            
             self.tableView.reloadData()
 
         }
