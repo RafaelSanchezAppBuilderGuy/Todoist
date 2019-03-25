@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C671A32249519E00EBAE32 /* 226_UserDefaultsExplained_8_36.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 226_UserDefaultsExplained_8_36.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		04C9B274224809AF00DE6C96 /* Todoist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C9B277224809AF00DE6C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C9B279224809AF00DE6C96 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -35,11 +36,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C671A22249517100EBAE32 /* Sections From Udemy That didnt work */ = {
+			isa = PBXGroup;
+			children = (
+				04C671A32249519E00EBAE32 /* 226_UserDefaultsExplained_8_36.playground */,
+			);
+			path = "Sections From Udemy That didnt work";
+			sourceTree = "<group>";
+		};
 		04C9B26B224809AF00DE6C96 = {
 			isa = PBXGroup;
 			children = (
 				04C9B276224809AF00DE6C96 /* Todoist */,
 				04C9B275224809AF00DE6C96 /* Products */,
+				04C671A22249517100EBAE32 /* Sections From Udemy That didnt work */,
 			);
 			sourceTree = "<group>";
 		};
